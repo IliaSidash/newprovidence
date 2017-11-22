@@ -1,0 +1,109 @@
+.header{
+  background: url(../images/header-bg.jpg) no-repeat center / cover;
+  padding-top: 44px;
+  overflow: hidden;
+}
+
+.main-menu{
+  display: flex;
+  margin-bottom: 0;
+
+  &__item{
+    display: block;
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    color: inherit;
+    transition: color .3s;
+    &:hover{
+      color: #9f9fa1;
+      text-decoration: none;
+    }
+
+  }
+}
+.logo{
+  text-align: center;
+}
+.contacts{
+  text-align: right;
+  &__link{
+    margin-right: 30px;
+    transition: color .3s;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover{
+      color: #9f9fa1;
+      text-decoration: none;
+    }
+    &_app{
+      position: relative;
+      color: #fff;
+      padding: 15px 25px 15px 48px;
+      background-color: #267df4;
+      border-radius: 29px;
+      transition: background-color .3s;
+      &:before{
+        content: "\f179";
+        position: absolute;
+        font-family: 'fontawesome';
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+      }
+      &:hover{
+        color: #fff;
+        background-color: lighten(#267df4, 10%);
+      }
+    }
+  }
+}
+
+.offer{
+  position: relative;
+  text-align: center;
+  &__title{
+    font-size: 62px;
+    margin-top: 125px;
+    margin-bottom: 40px;
+  }
+  &__desc{
+    max-width: 830px;
+    color: #8c8f94;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  &__btn{
+    position: relative;
+    font-size: 16px;
+    padding: 18px 48px 20px 66px;
+    border:1px solid #8c8f94;
+    border-radius: 50px;
+    transition: color .3s;
+    margin-bottom: 510px;
+    &:before{
+      content: '\f04b';
+      font-family: 'fontawesome';
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover{
+      color: #9f9fa1;
+      text-decoration: none;
+    }
+  }
+  &__img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+  }
+}
