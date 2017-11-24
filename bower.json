@@ -3,7 +3,8 @@
   "dependencies": {
     "bootstrap": "v4.0.0-alpha.2",
     "jquery": "^3.2.1",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "slick-carousel": "slick-slide#^1.8.1"
   },
   "overrides": {
     "jquery": {
@@ -14,6 +15,13 @@
     "font-awesome": {
       "main": [
         "./css/font-awesome.min.css"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "./slick/slick-theme.css",
+        "./slick/slick.css",
+        "./slick/slick.min.js"
       ]
     }
   }

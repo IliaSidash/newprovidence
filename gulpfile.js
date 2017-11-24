@@ -31,16 +31,16 @@ var path = {
         fonts: 'build/fonts/',
         pug: 'build/'
     },
-    source: { 
-        html: 'source/*.html', 
-        js: 'source/js/*.js', 
+    source: {
+        html: 'source/*.html',
+        js: 'source/js/*.js',
         scss: 'source/styles/**/*.scss',
         css: 'source/css/*.css',
-        img: 'source/images/**/*.*', 
+        img: 'source/images/**/*.*',
         fonts: 'source/fonts/**/*.*',
         pug: 'source/template/index.pug'
     },
-    watch: { 
+    watch: {
         html: 'source/**/*.html',
         js: 'source/js/**/*.js',
         scss: 'source/styles/**/*.scss',
@@ -85,44 +85,45 @@ gulp.task('pug:build', function buildHTML() {
 });
 
 gulp.task('js:build', function () {
-    return gulp.src(path.source.js) 
-        .pipe(sourcemaps.init()) 
-        .pipe(uglify()) 
-        .pipe(sourcemaps.write()) 
-        .pipe(gulp.dest(path.build.js)) 
-        .pipe(reload({stream: true})); 
+    return gulp.src(path.source.js)
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(path.build.js))
+        .pipe(reload({stream: true}));
 });
 //
 gulp.task('scss:build', function () {
-    return gulp.src(path.source.scss) 
-        // .pipe(plumber())
-        .pipe(sourcemaps.init()) 
-        .pipe(sass()) 
-        .pipe(prefixer()) 
-        .pipe(cleanCSS()) 
+    return gulp.src(path.source.scss)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(prefixer())
+        .pipe(cleanCSS())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.scss)) 
+        .pipe(gulp.dest(path.build.scss))
+        .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
 //
 gulp.task('css:build', function () {
-    return gulp.src(path.source.css) 
-        .pipe(sourcemaps.init()) 
-        .pipe(cleanCSS()) 
+    return gulp.src(path.source.css)
+        .pipe(sourcemaps.init())
+        .pipe(cleanCSS())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.css)) 
+        .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
 //
 gulp.task('image:build', function () {
-    return gulp.src(path.source.img) 
-        .pipe(imagemin({ 
+    return gulp.src(path.source.img)
+        .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest(path.build.img)) 
+        .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 });
 //
@@ -168,4 +169,3 @@ gulp.task('default', gulp.series(
         'server'
     )
 ));
-

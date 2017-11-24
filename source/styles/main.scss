@@ -4,13 +4,14 @@
 @import "global/fonts";
 @import "global/vars";
 @import "global/base";
+@import "global/btn";
+@import "global/title";
+@import "global/text";
 /* -- Modules -- */
 
 /* -- Sections -- */
 @import "sections/header";
-@import "sections/offer";
-
-
-
-
-
+@import "sections/features";
+@import "sections/protect";
+@import "sections/map-feature";
+@import "sections/screens";

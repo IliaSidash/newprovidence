@@ -1,0 +1,24 @@
+.btn{
+  position: relative;
+  font-size: 16px;
+  padding: 15px 34px 16px 34px;
+  border:1px solid #e9e9ea;
+  border-radius: 49px;
+  transition: color .3s;
+
+
+  &:hover{
+    color: #9f9fa1;
+    text-decoration: none;
+  }
+  &_blue{
+    border: none;
+    background-color: #267df4;
+    color: #fff;
+    transition: background-color .3s;
+    &:hover{
+      background-color: lighten(#267df4, 10%);
+      color: #fff;
+    }
+  }
+}

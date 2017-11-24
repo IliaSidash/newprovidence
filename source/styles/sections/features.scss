@@ -1,0 +1,33 @@
+.features{
+  padding-top:120px;
+  &__item{
+    padding-left:40px;
+  }
+  &__icon{
+    margin-bottom: 45px;
+    &_clock{
+      padding-bottom: 4px;
+    }
+  }
+  &__title{
+    font-family: 'latoLight';
+    font-size: 26px;
+    color: #26272d;
+    margin-bottom: 45px;
+    font-weight: bold;
+  }
+  &__text{
+    color: #8c8f94;
+    font-size: 18px;
+    margin-bottom: -35px;
+    p{
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.divider{
+  margin-top: 125px;
+  height: 1px;
+  background: #8c8f94;
+}

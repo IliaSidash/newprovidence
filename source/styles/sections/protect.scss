@@ -1,0 +1,26 @@
+.protect{
+  padding: 265px 0;
+  background: url(../images/protected-iphone.png)no-repeat left center;
+  &__title{
+    margin-bottom: 70px;
+  }
+  &__btn{
+    padding-left: 25px;
+    padding-right: 85px;
+    margin-right: 20px;
+    &:after{
+      content: "\f061";
+      font-family: 'fontawesome';
+      position: absolute;
+      right:27px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__img{
+    position: absolute;
+  }
+}
+.buttons-group{
+  margin-top: 75px;
+}

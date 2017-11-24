@@ -1,0 +1,22 @@
+.map-feature{
+  padding: 180px 0 220px;
+  background: url(../images/map.png)no-repeat right center;
+  &__title{
+    margin-bottom: 60px;
+  }
+}
+.partners{
+  margin-top: 60px;
+  &__title{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'latoBold';
+    margin-bottom: 30px;
+  }
+  &__img{
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
