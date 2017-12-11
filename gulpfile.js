@@ -95,9 +95,9 @@ gulp.task('js:build', function () {
 //
 gulp.task('scss:build', function () {
     return gulp.src(path.source.scss)
-        .pipe(plumber())
+        // .pipe(plumber())
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(prefixer())
         .pipe(cleanCSS())
         .pipe(sourcemaps.write())
@@ -137,8 +137,8 @@ gulp.task('build', gulp.parallel(
     'vendorJs:build',
     'pug:build',
     'js:build',
-    'scss:build',
     'css:build',
+    'scss:build',
     'fonts:build',
     'image:build'
 ));
