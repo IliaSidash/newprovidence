@@ -24,5 +24,8 @@
     "imagemin-pngquant": "^4.0.0",
     "main-bower-files": "^2.13.1",
     "rimraf": "^2.3.1"
+  },
+  "dependencies": {
+    "animate": "^1.0.0"
   }
 }

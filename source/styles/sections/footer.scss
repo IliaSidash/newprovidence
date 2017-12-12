@@ -1,0 +1,73 @@
+.footer{
+  padding: 86px 0 26px;
+  &__logo{
+    text-align: left;
+  }
+  &-text{
+    color: #8c8f94;
+    font-size: 14px;
+    margin: 35px 0 32px;
+    line-height: 24px;
+  }
+  &-download{
+  text-align: left;
+    &__btn{
+      border-radius: 8px;
+      padding: 8px 16px 10px 41px;
+      &:before{
+        left: 8px;
+      }
+    }
+  }
+  &__title{
+    font-size: 14px;
+    font-family: "latoBold";
+    text-transform: uppercase;
+  }
+}
+.footer-menu{
+  &, &__item{
+    padding: 0;
+    display: block;
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 36px;
+    color: #8c8e92;
+  }
+}
+.footer-socials{
+  margin-top: 40px;
+  &__link{
+    margin-right: 25px;
+    &:last-child{
+      margin-right: 0;
+    }
+    i{
+      color: #8c8e92;
+
+    }
+  }
+}
+.footer-bottom{
+  padding-top: 28px;
+}
+.more{
+  font-size: 14px;
+  color: #8c8f94;
+  line-height: 37px;
+  a{
+    color: #4556e1;
+    text-decoration: underline;
+  }
+
+}
+.developer-logo{
+  span{
+    font-size: 9px;
+    font-family: "latoBold";
+    text-transform: uppercase;
+    line-height: 36px;
+    margin-right: 11px;
+  }
+}

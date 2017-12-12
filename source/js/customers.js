@@ -2,19 +2,20 @@ $(function(){
 	$('.customers-slider-top').slick({
 		centerPadding: '60',
 		slidesToShow: 1,
-		// autoplay: true,
-  //   	autoplaySpeed: 2000,
-    	asNavFor: '.customers-slider-bottom',
-    	centerMode: true,
-    	// variableWidth: true,
-		
+		slideToScroll: 1,
+		centerMode: true,
+		infinyte: false,
+  	asNavFor: '.customers-slider-bottom',
+  	centerMode: true,
+  	variableWidth: true,
+		focusOnSelect: true
+
 	});
 	$('.customers-slider-bottom').slick({
 		slidesToShow: 1,
-		// autoplay: true,
-  //   	autoplaySpeed: 2000,
-    	asNavFor: '.customers-slider-top',
-    	centerMode: true,
-    	focusOnSelect: true,
+		infinyte: false,
+  	asNavFor: '.customers-slider-top',
+  	centerMode: true,
+		arrows: false
 	});
 });
