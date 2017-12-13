@@ -1,6 +1,9 @@
 .map-feature{
   padding: 180px 0 220px;
   background: url(../images/map.png)no-repeat right center;
+  &__content{
+    opacity: 0;
+  }
   &__title{
     margin-bottom: 60px;
   }

@@ -1,6 +1,9 @@
 .protect{
   padding: 265px 0;
   background: url(../images/protected-iphone.png)no-repeat left center;
+  &__content{
+    opacity: 0;
+  }
   &__title{
     margin-bottom: 70px;
   }
