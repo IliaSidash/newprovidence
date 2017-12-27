@@ -40,6 +40,12 @@
     transform: translateX(-50%);
     z-index: 10;
     pointer-events: none;
+    @include media(400){
+      max-width: 320px;
+    }
+  }
+  @include media(400){
+    padding: 45px 0;
   }
 }
 
@@ -48,10 +54,18 @@
     text-align: center;
     margin: 25px;
     box-shadow: 0 0 25px rgba(0,0,0,.16);
+    @include media(400){
+      margin: 10 0 0;
+      box-shadow: none;
+    }
   }
   &__img{
     display: block;
     margin: 0 auto;
+    @include media(400){
+      max-width: 85%;
+      margin-top: -20px;
+    }
   }
 }
 .company-name{
@@ -63,6 +77,9 @@
   margin-bottom: 40px;
   &_bold{
     font-family: 'latoBold';
+  }
+  @include media(576){
+    margin-top: 45px;
   }
 }
 
@@ -102,6 +119,14 @@
         transform: translate(10px, -50%);
       }
     }
+    @include media(576){
+      right: 50%;
+      top: 115%;
+      transform: translateX(50%);
+    }
+  }
+  @include media(576){
+      margin: 45px 0 65px;
   }
 }
 .download{

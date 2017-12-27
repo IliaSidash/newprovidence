@@ -4,6 +4,7 @@
   &__content{
     opacity: 0;
   }
+
   &__title{
     margin-bottom: 70px;
   }
@@ -19,11 +20,23 @@
       top: 50%;
       transform: translateY(-50%);
     }
+    @include media(576){
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
   &__img{
     position: absolute;
   }
+  @include media(576){
+    padding: 130px 0;
+    text-align: center;
+  }
 }
 .buttons-group{
-  margin-top: 75px;
+  margin-top: 175px;
+  @include media(576){
+    display: flex;
+    flex-direction: column;
+  }
 }

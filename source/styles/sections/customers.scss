@@ -7,6 +7,9 @@
 		width: 320px;
 		min-height: 250px;
 		position: relative;
+		@include media(991){
+			width: 220px;
+		}
 	}
 	&__img{
 		position: absolute;

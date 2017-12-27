@@ -3,11 +3,22 @@
   &__item{
     padding-left:40px;
     opacity: 0;
+    @include media(767){
+      padding-left: 0;
+      text-align: center;
+    }
   }
   &__icon{
     margin-bottom: 45px;
     &_clock{
       padding-bottom: 4px;
+      @include media(767){
+        padding-top: 45px;
+      }
+    }
+    @include media(767){
+      display: block;
+      margin: 0 auto 25px;
     }
   }
   &__title{
@@ -16,6 +27,9 @@
     color: #26272d;
     margin-bottom: 45px;
     font-weight: bold;
+    @include media(767){
+      margin-bottom: 25px;
+    }
   }
   &__text{
     color: #8c8f94;
@@ -25,10 +39,16 @@
       margin-bottom: 35px;
     }
   }
+  @include media(767){
+    padding-top: 45px;
+  }
 }
 
 .divider{
   margin-top: 125px;
   height: 1px;
   background: #f4f4f4;
+  @include media(767){
+    margin-top: 45px;
+  }
 }

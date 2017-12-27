@@ -7,12 +7,16 @@
 .main-menu{
   display: flex;
   margin-bottom: 0;
+  padding-left: 0;
 
   &__item{
     display: block;
     margin-right: 30px;
     &:last-child{
       margin-right: 0;
+    }
+    @include media(1200){
+      margin-right: 20px;
     }
   }
   &__link{
@@ -23,6 +27,9 @@
       text-decoration: none;
     }
 
+  }
+  @include media(768){
+    margin: 0 auto;
   }
 }
 .logo{
@@ -36,6 +43,7 @@
     &:last-child{
       margin-right: 0;
     }
+
     &:hover{
       color: #9f9fa1;
       text-decoration: none;
@@ -60,6 +68,9 @@
         background-color: lighten(#267df4, 10%);
       }
     }
+    @include media(1200){
+      margin-right: 20px;
+    }
   }
 }
 
@@ -70,6 +81,11 @@
     font-size: 62px;
     margin-top: 125px;
     margin-bottom: 40px;
+    @include media(576){
+      margin-top: 45px;
+      font-size: 45px;
+      line-height: 1;
+    }
   }
   &__desc{
     max-width: 830px;
@@ -98,11 +114,14 @@
       color: #9f9fa1;
       text-decoration: none;
     }
+    @include media(576){
+      margin-bottom: 400px;
+    }
   }
   &__img{
     display: block;
     position: absolute;
-    left: 50%;
+    left: 53%;
     bottom: 0;
     transform: translate(-50%, 50%);
   }

@@ -86,6 +86,7 @@ gulp.task('pug:build', function buildHTML() {
 
 gulp.task('js:build', function () {
     return gulp.src(path.source.js)
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write())
